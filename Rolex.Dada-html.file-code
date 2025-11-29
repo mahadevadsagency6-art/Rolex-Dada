@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ROLEX DADA — Free VIP Cricket Tips</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <meta name="description" content="ROLEX DADA — Free VIP access to toss, match & session cricket tips. Join the exclusive Telegram channel." />
+
+  <style>
+    :root{
+      --bg:#060607; /* deep black/charcoal */
+      --card:#0d0e10;
+      --muted:#9aa3b2;
+      --electric:#00b0ff; /* electric blue */
+      --gold:#d4af37; /* gold accent */
+      --glass-alpha: 0.18;
+      --radius: 14px;
+      --max-width: 920px;
+      --transition: 240ms cubic-bezier(.2,.9,.3,1);
+    }
+
+    /* mobile-first baseline */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:
+        radial-gradient(1200px 600px at 10% 15%, rgba(0,176,255,0.04), transparent 6%),
+        radial-gradient(1000px 500px at 90% 85%, rgba(212,175,55,0.03), transparent 8%),
+        var(--bg);
+      color: #e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+      line-height:1.35;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      margin:0 auto;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:18px;
+      padding:28px;
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.6),
+        0 1px 0 rgba(255,255,255,0.02) inset;
+      border:1px solid rgba(255,255,255,0.03);
+      overflow:hidden;
+    }
+
+    /* Header / Hero */
+    .hero{
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-direction:column;
+    }
+
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+
+    .logo {
+      width:56px;
+      height:56px;
+      min-width:56px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6), 0 0 18px rgba(0,176,255,0.03);
+      position:relative;
+      overflow:hidden;
+    }
+    
+    h1{
+      margin:12px 0 0 0;
+      font-size:28px;
+      font-weight:800;
+      letter-spacing:4px;
+      text-transform:uppercase;
+      line-height:1;
+      color: #f3f7fb;
+      text-shadow: 0 6px 24px rgba(0,176,255,0.03);
+    }
+
+    .subtitle{
+      margin:8px 0 0 0;
+      color:var(--muted);
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .tagline{
+      margin-top:18px;
+      font-size:16px;
+      font-weight:600;
+      color:#eaf6ff;
+    }
+
+    /* Features */
+    .features{
+      display:grid;
+      gap:12px;
+      margin:20px 0 18px 0;
+    }
+
+    .feature{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      padding:12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
+      backdrop-filter: blur(0.5px);
+    }
+
+    .feature .dot{
+      width:42px;
+      height:42px;
+      min-width:42px;
+      border-radius:10px;
+      display:grid;
+      place-items:center;
+      background: linear-gradient(180deg, rgba(0,176,255,0.07), rgba(212,175,55,0.03));
+      box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+      border:1px solid rgba(255,255,255,0.03);
+      font-weight:700;
+      color:var(--electric);
+      font-size:16px;
+    }
+
+    .feature p{
+      margin:0;
+      font-weight:600;
+      font-size:15px;
+      color:#e9f6ff;
+    }
+
+    .feature small{
+      display:block;
+      margin-top:4px;
+      font-size:12px;
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    /* CTA area */
+    .cta-wrap{
+      margin-top:18px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .benefit{
+      color:var(--muted);
+      font-size:13px;
+      font-weight:600;
+    }
+
+    /* Expensive CTA button */
+    .cta-btn{
+      -webkit-appearance:none;
+      appearance:none;
+      border:0;
+      cursor:pointer;
+      padding:14px 18px;
+      border-radius:12px;
+      font-weight:800;
+      font-size:13px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      background: linear-gradient(90deg, rgba(0,176,255,0.12), rgba(212,175,55,0.06));
+      color:#eaf6ff;
+      position:relative;
+      overflow:visible;
+      transition:transform var(--transition), box-shadow var(--transition);
+      box-shadow:
+        0 6px 30px rgba(0,0,0,0.6),
+        0 0 18px rgba(0,176,255,0.06);
+      border:1px solid rgba(255,255,255,0.04);
+    }
+
+    /* Neon glow pulse */
+    .cta-btn::before{
+      content:"";
+      position:absolute;
+      inset:-6px;
+      border-radius:14px;
+      z-index:-1;
+      background: radial-gradient(ellipse at center, rgba(0,176,255,0.14), transparent 30%);
+      filter:blur(10px);
+      opacity:0.95;
+      transition:opacity 240ms;
+      pointer-events:none;
+    }
+
+    /* subtle inner shine */
+    .cta-btn::after{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:50%;
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.00));
+      border-top-left-radius:12px;
+      border-top-right-radius:12px;
+      pointer-events:none;
+    }
+
+    .cta-btn:active{ transform:translateY(1px) scale(.998); }
+    .cta-btn:hover{ transform:translateY(-2px); }
+
+    /* stronger pulsing on hover to keep idle resource usage low */
+    @media (prefers-reduced-motion: no-preference){
+      .cta-btn{
+        animation: subtlepulse 4s ease-in-out infinite;
+      }
+      .cta-btn:hover{ animation: subtlepulse 2.4s ease-in-out infinite; }
+    }
+    @keyframes subtlepulse{
+      0% { box-shadow: 0 6px 30px rgba(0,0,0,0.6), 0 0 10px rgba(0,176,255,0.05); transform:translateY(0); }
+      50% { box-shadow: 0 10px 42px rgba(0,0,0,0.66), 0 0 30px rgba(0,176,255,0.16); transform:translateY(-2px); }
+      100% { box-shadow: 0 6px 30px rgba(0,0,0,0.6), 0 0 10px rgba(0,176,255,0.05); transform:translateY(0); }
+    }
+
+    /* Secondary CTA (gold) inside modal will use .gold-btn */
+    .gold-btn{
+      background: linear-gradient(90deg, rgba(212,175,55,0.14), rgba(0,176,255,0.03));
+      color:#fff7e6;
+      border:1px solid rgba(212,175,55,0.16);
+      box-shadow: 0 14px 40px rgba(212,175,55,0.06);
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      transition: all 200ms;
+    }
+    .gold-btn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 18px 45px rgba(212,175,55,0.12);
+    }
+
+    /* Modal (full-screen) - hidden by default */
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1200;
+      background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.65));
+      backdrop-filter: blur(6px) saturate(120%);
+      -webkit-backdrop-filter: blur(6px) saturate(120%);
+      padding:22px;
+      opacity: 0; /* for smooth transition */
+      transition: opacity 300ms ease-out;
+    }
+    .modal-backdrop.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    .modal{
+      width:100%;
+      max-width:680px;
+      border-radius:18px;
+      background: linear-gradient(180deg, rgba(10,11,12,0.52), rgba(7,8,10,0.32));
+      border:1px solid rgba(255,255,255,0.04);
+      padding:28px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.7), 0 2px 0 rgba(255,255,255,0.02) inset;
+      position:relative;
+      backdrop-filter: blur(8px);
+      transform: translateY(20px);
+      transition: transform 300ms ease-out;
+    }
+    .modal-backdrop.show .modal {
+        transform: translateY(0);
+    }
+
+    .modal h3{
+      margin:0 0 8px 0;
+      font-size:20px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:#f9fbff;
+      font-weight:800;
+    }
+
+    .modal p{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .modal .actions{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .close-btn{
+      position:absolute;
+      right:14px;
+      top:12px;
+      background:transparent;
+      border:0;
+      color:var(--muted);
+      font-weight:700;
+      font-size:16px;
+      cursor:pointer;
+      padding:8px;
+      border-radius:8px;
+    }
+    .close-btn:hover{ color:#fff; transform:scale(1.03); }
+
+    /* small footer note */
+    .note{
+      margin-top:18px;
+      font-size:12px;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    /* layout tweaks for larger screens */
+    @media(min-width:760px){
+      .hero{
+        flex-direction:row;
+        align-items:center;
+      }
+      .left{
+        flex:1;
+      }
+      .right{
+        width:320px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .card{ padding:32px; }
+      h1{ font-size:36px; letter-spacing:5px; }
+      .tagline{ font-size:18px; }
+    }
+
+    /* reduced motion preference */
+    @media (prefers-reduced-motion: reduce){
+      .cta-btn, .cta-btn::before, .modal-backdrop, .modal { animation:none !important; transition:none !important; }
+      * { scroll-behavior: auto; }
+    }
+
+    /* tiny accessibility focus ring */
+    :focus{ outline: none; box-shadow: 0 0 0 3px rgba(0,176,255,0.12); border-radius:8px; }
+
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <section class="card" aria-labelledby="hero-title">
+      <div class="hero">
+        <div class="left">
+          <div class="brand" aria-hidden="true">
+            <div class="logo" aria-hidden="true">
+              <img id="dp-image" src="Rolex1234Image.jpg" alt="Rolex Dada Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; position: relative; z-index: 2;">
+            </div>
+            <div>
+              <h1 id="hero-title">ROLEX DADA</h1>
+              <div class="subtitle">The Ultimate Edge in Cricket Tips.</div>
+            </div>
+          </div>
+
+          <div class="tagline" style="margin-top:18px">
+            <strong>FREE VIP ACCESS:</strong> Toss, Match, &amp; Session Tips.
+          </div>
+
+          <div class="features" aria-hidden="false" aria-label="Key features">
+            <div class="feature">
+              <div class="dot">01</div>
+              <div>
+                <p>Unmatched Toss Predictions.</p>
+                <small>Data-backed toss calls for tactical advantage.</small>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">02</div>
+              <div>
+                <p>Deep Match Analysis.</p>
+                <small>Concise reasoning, risk-aware suggestions.</small>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">03</div>
+              <div>
+                <p>Live Session Guidance.</p>
+                <small>Real-time session notes to act quickly.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-wrap" style="margin-top:8px;">
+            <div class="benefit">Join thousands of smart players — 100% free</div>
+
+            <button class="cta-btn" id="open-modal" aria-haspopup="dialog" aria-controls="vip-modal">
+              ACCESS THE VIP CHANNEL NOW
+            </button>
+          </div>
+
+          <div class="note">
+            <small>No spam. Free access. High-quality, time-sensitive tips.</small>
+          </div>
+        </div>
+
+        <aside class="right" aria-hidden="true" style="margin-top:18px;">
+          <div style="width:100%;max-width:320px;border-radius:12px;padding:16px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02);">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div>
+                <div style="font-size:13px;color:var(--muted);font-weight:700;">Premium Accuracy</div>
+                <div style="font-weight:800;font-size:20px;margin-top:6px;">92%+ Signal Clarity</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-size:12px;color:var(--muted)">Free Access</div>
+                <div style="margin-top:6px;font-weight:800;color:#eaf6ff">Instant</div>
+              </div>
+            </div>
+            <hr style="border:none;height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,0.02), transparent);margin:12px 0;border-radius:2px;">
+            <div style="font-size:13px;color:var(--muted);">Join the VIP channel for live updates, and always be ahead of the game.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal" role="document" id="vip-modal">
+      <button class="close-btn" id="close-modal" aria-label="Close dialog">✕</button>
+      <h3 id="modal-title">CONFIRM PREMIUM ENTRY</h3>
+      <p>You are about to access the most accurate free tips in the market. Click 'Proceed' below.</p>
+
+      <div style="display:flex;gap:12px;align-items:center;justify-content:space-between;">
+        <div style="flex:1">
+          <small style="color:var(--muted);font-weight:600">Fast. Accurate. Free.</small>
+        </div>
+        <div class="actions">
+          <button class="gold-btn" id="proceed-btn" onclick="location.href='https://t.me/+QEx--M5oDbljMzRl'">PROCEED TO TELEGRAM CHANNEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Minimal, efficient modal JS. Keeps performance high.
+    (function(){
+      const openBtn = document.getElementById('open-modal');
+      const backdrop = document.getElementById('modal-backdrop');
+      const closeBtn = document.getElementById('close-modal');
+      const modal = document.getElementById('vip-modal');
+
+      function showModal(){
+        backdrop.classList.add('show'); // Use class for smooth transition
+        backdrop.setAttribute('aria-hidden', 'false');
+        setTimeout(()=> { modal.focus?.(); }, 60);
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function hideModal(){
+        backdrop.classList.remove('show');
+        backdrop.setAttribute('aria-hidden', 'true');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+        openBtn.focus();
+      }
+
+      openBtn.addEventListener('click', showModal);
+      closeBtn.addEventListener('click', hideModal);
+
+      // Close on backdrop click (but not when clicking inside modal)
+      backdrop.addEventListener('click', function(e){
+        if(e.target === backdrop) hideModal();
+      });
+
+      // keyboard accessibility: ESC to close
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && backdrop.classList.contains('show')){
+          hideModal();
+        }
+      });
+
+      // prevent tab-focus leaving modal (simple trap)
+      document.addEventListener('focus', function(e){
+        if (backdrop.classList.contains('show') && !modal.contains(e.target)){
+          e.stopPropagation();
+          modal.focus();
+        }
+      }, true);
+
+      // small optimization: remove event listeners on unload
+      window.addEventListener('unload', function(){
+        openBtn.removeEventListener('click', showModal);
+        closeBtn.removeEventListener('click', hideModal);
+        backdrop.removeEventListener('click', hideModal);
+        document.removeEventListener('keydown', hideModal);
+      });
+    })();
+  </script>
+</body>
+</html>
